@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+
+  server-app:
+    build:
+      context: ./server-app
+    volumes:
+      - ./server-app:/home
+    command:
+      - npm run serve
+
+  server-web:
+    image: nginx:1.12.2
+    volumes:
+      - ./browser-console/dist:/usr/share/nginx/html
+      - ./server-web/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8080:80

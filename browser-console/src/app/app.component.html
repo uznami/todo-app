@@ -1,0 +1,21 @@
+<input
+  type="text"
+  name="temp-todo-text"
+  [(ngModel)]="tempTodoText"
+  [disabled]="submitting"
+/>
+<button
+  (click)="submit()"
+  [disabled]="submitting"
+>
+  {{ submitting ? "作成中..." : "作成"}}
+</button>
+
+<ul>
+  <li
+    *ngFor="let todo of todos; index as i; trackBy: trackTodo"
+    (click)="toggle(i)"
+  >
+    {{ todo.done ? "☑" : "☐" }} {{ todo.text }}
+  </li>
+</ul>

@@ -1,0 +1,42 @@
+# compiled output
+browser-console/dist
+browser-console/dist-server
+browser-console/tmp
+browser-console/out-tsc
+
+# dependencies
+browser-console/node_modules
+
+# IDEs and editors
+browser-console/.idea
+browser-console/.project
+browser-console/.classpath
+browser-console/.c9/
+browser-console/*.launch
+browser-console/.settings/
+browser-console/*.sublime-workspace
+
+# IDE - VSCode
+browser-console/.vscode/*
+browser-console/!.vscode/settings.json
+browser-console/!.vscode/tasks.json
+browser-console/!.vscode/launch.json
+browser-console/!.vscode/extensions.json
+
+# misc
+browser-console/.sass-cache
+browser-console/connect.lock
+browser-console/coverage
+browser-console/libpeerconnection.log
+browser-console/npm-debug.log
+browser-console/yarn-error.log
+browser-console/testem.log
+browser-console/typings
+
+# e2e
+browser-console/e2e/*.js
+browser-console/e2e/*.map
+
+# System Files
+browser-console/.DS_Store
+browser-console/Thumbs.db
